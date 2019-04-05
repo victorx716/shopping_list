@@ -1,0 +1,19 @@
+{
+  "name": "fullstackshop",
+  "version": "1.0.0",
+  "description": "A full stack shopping list built on the MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "author": "Victor Liu",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.22",
+    "nodemon": "^1.18.10"
+  }
+}
