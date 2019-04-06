@@ -42,15 +42,14 @@ class ItemModal extends Component {
     return(
       <div>
         <Button
-        color="#d4edda"
-        style={{marginBottom: '2rem'}}
+        style={{backgroundColor: "#d4edda", marginBottom: '2rem'}} 
         onClick={this.toggle}
         >Add Item
         </Button>
         <Modal
           isOpen={this.state.modal}
           toggle={this.toggle}>
-          <ModalHeader toggle = {this.toggle}>Add To Shopping List</ModalHeader>
+          <ModalHeader toggle = {this.toggle}>Add To List</ModalHeader>
           <ModalBody>
             <Form onSubmit={this.onSubmit}>
               <FormGroup>
@@ -63,8 +62,7 @@ class ItemModal extends Component {
                 onChange={this.onChange}
                 />
                 <Button
-                  color="#d4edda"
-                  style={{marginTop: '2rem'}}
+                  style={{backgroundColor: "#d4edda", marginTop: '2rem'}}                  
                   block
                 >Add Item</Button>
               </FormGroup>
