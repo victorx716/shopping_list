@@ -42,31 +42,31 @@ class ItemModal extends Component {
     return(
       <div>
         <Button
-        color="dark"
+        color="#d4edda"
         style={{marginBottom: '2rem'}}
         onClick={this.toggle}
-        >Add Coin
+        >Add Item
         </Button>
         <Modal
           isOpen={this.state.modal}
           toggle={this.toggle}>
-          <ModalHeader toggle = {this.toggle}>Add To Coin List</ModalHeader>
+          <ModalHeader toggle = {this.toggle}>Add To Shopping List</ModalHeader>
           <ModalBody>
             <Form onSubmit={this.onSubmit}>
               <FormGroup>
-                <Label for="item">Coin</Label>
+                <Label for="item">Item</Label>
                 <Input
                 type="text"
                 name="name"
                 id="item"
-                placeholder="Add item to cart"
+                placeholder="Add item to list"
                 onChange={this.onChange}
                 />
                 <Button
-                  color="dark"
+                  color="#d4edda"
                   style={{marginTop: '2rem'}}
                   block
-                >Add Coin</Button>
+                >Add Item</Button>
               </FormGroup>
             </Form>
           </ModalBody>

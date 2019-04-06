@@ -26,7 +26,7 @@ class ShoppingList extends Component {
                 <ListGroupItem>
                   <Button
                     className="remove-btn"
-                    color="danger"
+                    color="#d4edda"
                     size="sm"
                     onClick={this.onDeleteClick.bind(this, _id)}
                   >&times;</Button>
